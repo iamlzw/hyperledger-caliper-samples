@@ -203,7 +203,43 @@ $ npx caliper launch manager \
 ```
 
 ![image.png](http://lifegoeson.cn:8888/images/2021/05/31/image.png)
+可以在config.yaml中修改测试的参数
 
+```bash
+$ cd caliper-benchmarks/benchmarks/samples/fabric/marbles
+$ vim config.yaml
+```
+
+```yaml
+#### config.yaml
+#### 通过修改txNumber,tps的值来修改测试参数,修改后停止并清理网络,之后进行新的测试即可。
+
+test:
+  workers:
+    type: local
+    number: 5
+  rounds:
+    - label: init
+      txNumber: 500
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 25
+      workload:
+        module: benchmarks/samples/fabric/marbles/init.js
+    - label: query
+      txDuration: 15
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 5
+      workload:
+        module: benchmarks/samples/fabric/marbles/query.js
+```
+
+
+
+### 
 ### 问题及解决
 
 Q: 执行```npx caliper bind --caliper-bind-sut fabric:1.4.0```时报错
