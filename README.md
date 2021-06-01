@@ -53,7 +53,7 @@ $ cp -r channel-artifacts caliper-benchmarks/
 
 ### 修改配置文件
 
-这里需要修改fabric-go.yaml文件,基于```caliper-benchmarks/networks/fabric/v1/v1.4.1/2org1peergoleveldb/fabric-go-tls.yaml```进行修改,该文件的作用是用于连接测试网络,与sdk的配置文件类似,修改后的config.yaml文件位于hyperledger-caliper-samples/caliper-benchmarks目录下
+这里需要修改fabric-go.yaml文件,基于```caliper-benchmarks/networks/fabric/v1/v1.4.1/2org1peergoleveldb/fabric-go-tls.yaml```进行修改,该文件的作用是用于连接测试网络,与sdk的配置文件类似,修改后的fabric-go.yaml文件位于hyperledger-caliper-samples/caliper-benchmarks目录下
 ```
 $ cd hyperledger-caliper-samples/caliper-benchmarks/
 $ vim fabric-go.yaml
