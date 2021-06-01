@@ -43,7 +43,7 @@ $ npm install --only=prod @hyperledger/caliper-cli@0.4.0
 
 ### 复制crypto-config目录以及channel-artifacts目录
 
-这一步可有可无，只是为了方便在后面修改配置文件中的私钥以及证书路径
+方便在后面修改配置文件中的私钥以及证书路径
 
 ```bash
 $ cd hyperledger-caliper-samples/
