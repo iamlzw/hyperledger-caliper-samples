@@ -18,8 +18,8 @@ $ ./start.sh
 ## 初始化网络，包括加入通道
 ## 输出当前项目路径,作为init.sh的参数
 $ pwd
-/home/www/go/src/github.com/hyperledger/fabric-samples/my-network
-$ ./init.sh /home/www/go/src/github.com/hyperledger/fabric-samples/my-network
+/home/www/go/src/github.com/hyperledger/fabric-samples/hyperledger-caliper-samples
+$ ./init.sh /home/www/go/src/github.com/hyperledger/fabric-samples/hyperledger-caliper-samples
 ## 停止网络，当发生错误时，用于停止并清理网络
 ## ./stop.sh
 ```
